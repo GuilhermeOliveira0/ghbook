@@ -25,7 +25,10 @@ android {
         versionName = "1.0.0"
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         // Celulares (ARM) + x86_64 para emuladores/Chromebooks.
-        ndk { abiFilters += listOf("arm64-v8a", "armeabi-v7a", "x86_64") }
+        // Para um APK menor só de celulares atuais: ./gradlew assembleRelease -Pghbook.abis=arm64-v8a
+        val abis = (project.findProperty("ghbook.abis") as String?)?.split(",")?.map { it.trim() }
+            ?: listOf("arm64-v8a", "armeabi-v7a", "x86_64")
+        ndk { abiFilters += abis }
     }
 
     signingConfigs {
