@@ -2,13 +2,13 @@
 
 App Android inspirado na experiência do Bookey. Você importa um livro em PDF, lê o texto extraído numa interface escura e confortável e **ouve a narração em português do Brasil com voz neural**, inclusive sem internet.
 
-**APK instalável:** [`dist/clone.apk`](dist/clone.apk) (≈ 237 MB, Android 8.0+, assinado; celulares ARM e emuladores x86_64). O tamanho vem quase todo das vozes neurais embutidas.
+**APK instalável:** [`ghbook.apk` na página de Releases](https://github.com/GuilhermeOliveira0/ghbook/releases/latest) (≈ 237 MB, Android 8.0+, assinado; celulares ARM e emuladores x86_64). O tamanho vem quase todo das vozes neurais embutidas.
 
 ---
 
 ## Como instalar, importar e ouvir
 
-1. Copie `dist/clone.apk` para o celular e abra o arquivo. Se o Android pedir, permita "instalar apps desconhecidos" para o gerenciador de arquivos.
+1. Baixe o `ghbook.apk` em [Releases](https://github.com/GuilhermeOliveira0/ghbook/releases/latest) direto no celular (ou copie do computador) e abra o arquivo. Se o Android pedir, permita "instalar apps desconhecidos" para o gerenciador de arquivos.
 2. Abra o **GHBook** e permita as notificações (elas mostram os controles de mídia e o progresso da geração de áudio).
 3. Toque em **Importar PDF** → **Selecionar PDF** e escolha o livro (por exemplo, na pasta *Download*). Também dá para usar *Abrir com* / *Compartilhar* → GHBook a partir de outro app.
 4. Quando aparecer **Pronto**, toque em **Ler** ou **Ouvir**.
@@ -229,7 +229,7 @@ Requisitos: JDK 17 e Android SDK (platform 35, build-tools 35). O `local.propert
 ```
 
 - **Chave de assinatura:** fica em `signing/` (`ghbook-release.jks` + `keystore.properties`) e não faz parte do código-fonte. **Faça backup dessa pasta:** sem ela não é possível publicar atualizações que instalem por cima da versão atual.
-- **Modelos neurais:** ficam em `app/src/main/assets/kokoro` e `app/src/main/assets/piper`. O módulo nativo é `app/libs/sherpa-onnx-1.13.8.aar`, baixado do GitHub oficial.
+- **Modelos neurais:** são versionados com Git LFS (instale o `git lfs` antes de clonar). Ficam em `app/src/main/assets/kokoro` e `app/src/main/assets/piper`. O módulo nativo é `app/libs/sherpa-onnx-1.13.8.aar`, baixado do GitHub oficial.
 - **PDFs de teste:** `python tools/make_test_pdf.py` gera os arquivos em `samples/`.
 - **Amostras das vozes:** ficam em `amostras-voz/`.
 
