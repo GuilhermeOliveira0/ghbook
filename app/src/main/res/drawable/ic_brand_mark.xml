@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Marca do app. Gerado a partir da geometria do logo GHBook (livro + ondas sonoras). -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp" android:height="48dp"
+    android:viewportWidth="336" android:viewportHeight="336">
+    <path android:fillColor="#FF0A0A0A" android:pathData="M68,0H268A68,68 0,0 1,336,68V268A68,68 0,0 1,268,336H68A68,68 0,0 1,0,268V68A68,68 0,0 1,68,0Z" />
+    <group android:translateX="-200" android:translateY="-392">
+        <path android:fillColor="#FFFFFFFF" android:pathData="M256,475C284,466 330,470 362,487L362,648C330,631 284,626 256,637Z" />
+        <path android:strokeColor="#FFFFFFFF" android:strokeWidth="19" android:strokeLineCap="round" android:pathData="M390,531.5V597.5M418,497.5V631.5M446,520.5V608.5M474,542.5V586.5" />
+        <path android:strokeColor="#FF0B2A6B" android:strokeWidth="10" android:strokeLineJoin="miter" android:pathData="M303,551.5A15,15 0,1 0,305,560.5H291" />
+        <path android:strokeColor="#FF0B2A6B" android:strokeWidth="10" android:pathData="M319.5,539V580M344.5,539V580" />
+        <path android:strokeColor="#FF0B2A6B" android:strokeWidth="8.5" android:pathData="M319.5,559.5H344.5" />
+    </group>
+</vector>

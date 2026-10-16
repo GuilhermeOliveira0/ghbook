@@ -1,0 +1,8 @@
+<resources>
+    <!-- Paleta da marca GHBook: preto, branco e azul-escuro. -->
+    <color name="brand_ink">#FF0A0A0A</color>
+    <color name="brand_navy">#FF0B2A6B</color>
+    <color name="brand_white">#FFFFFFFF</color>
+    <color name="bg">#FFFFFFFF</color>
+    <color name="icon_bg">#FF0A0A0A</color>
+</resources>
