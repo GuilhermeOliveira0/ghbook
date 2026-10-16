@@ -1,0 +1,19 @@
+# Gradle / Kotlin
+.gradle/
+.kotlin/
+build/
+local.properties
+
+# IDE
+*.iml
+.idea/
+
+# Assinatura de release (chave e senhas) — nunca versionar
+signing/
+*.jks
+*.keystore
+keystore.properties
+
+# APKs gerados
+dist/
+*.apk
